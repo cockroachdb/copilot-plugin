@@ -1,0 +1,19 @@
+{
+  "name": "cockroachdb-copilot-plugins",
+  "owner": {
+    "name": "Cockroach Labs",
+    "email": "support@cockroachlabs.com"
+  },
+  "metadata": {
+    "description": "Official CockroachDB plugin for GitHub Copilot",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "cockroachdb",
+      "description": "Connect GitHub Copilot directly to your CockroachDB clusters: explore schemas, write optimized SQL, debug queries, and manage distributed database clusters.",
+      "version": "0.1.0",
+      "source": "./"
+    }
+  ]
+}

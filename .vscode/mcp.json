@@ -1,0 +1,23 @@
+{
+  "servers": {
+    "cockroachdb-toolbox": {
+      "command": "toolbox",
+      "args": ["--config", "${workspaceFolder}/tools.yaml", "--stdio"],
+      "env": {
+        "COCKROACHDB_HOST": "${env:COCKROACHDB_HOST}",
+        "COCKROACHDB_PORT": "${env:COCKROACHDB_PORT}",
+        "COCKROACHDB_USER": "${env:COCKROACHDB_USER}",
+        "COCKROACHDB_PASSWORD": "${env:COCKROACHDB_PASSWORD}",
+        "COCKROACHDB_DATABASE": "${env:COCKROACHDB_DATABASE}",
+        "COCKROACHDB_SSLMODE": "${env:COCKROACHDB_SSLMODE}"
+      }
+    },
+    "cockroachdb-cloud": {
+      "type": "http",
+      "url": "https://cockroachlabs.cloud/mcp",
+      "headers": {
+        "mcp-cluster-id": "${env:COCKROACHDB_CLUSTER_ID}"
+      }
+    }
+  }
+}
