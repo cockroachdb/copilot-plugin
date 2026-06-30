@@ -1,7 +1,7 @@
 {
   "name": "cockroachdb",
   "description": "Connect GitHub Copilot directly to your CockroachDB clusters for hands-on database work: explore schemas, write optimized SQL, debug queries, and manage distributed database clusters. Provides MCP backends (self-hosted MCP Toolbox and managed CockroachDB Cloud MCP Server), specialized agents (DBA, Developer, Operator), skills across operational domains, and built-in safety hooks.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Cockroach Labs",
     "url": "https://github.com/cockroachdb"
