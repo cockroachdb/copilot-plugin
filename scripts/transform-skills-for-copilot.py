@@ -91,8 +91,19 @@ def split_for_length(skill_dir, text):
     if len(lines) <= MAX_LINES:
         return text
 
-    # Indices of level-2 section headers.
-    headers = [i for i, ln in enumerate(lines) if ln.startswith("## ")]
+    # Indices of level-2 section headers that are NOT inside a code fence.
+    # (Skill bodies contain fenced examples whose lines may start with "## ";
+    # splitting there would cut a code block in half and unbalance the fences,
+    # which breaks reference extraction in downstream linters.)
+    headers = []
+    in_fence = False
+    for i, ln in enumerate(lines):
+        stripped = ln.lstrip()
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+            in_fence = not in_fence
+            continue
+        if not in_fence and ln.startswith("## "):
+            headers.append(i)
     if not headers:
         return text  # nothing safe to move
 

@@ -426,35 +426,6 @@ Severity is calibrated for production by default. Non-production environments do
 
 **Annotations:** `*(downgraded from FAIL — development cluster)*` or `*(PCI DSS compliance — cannot downgrade)*`
 
-## Report Format
-
-Save each audit report to `reports/security-audit-<cluster-name>-<YYYY-MM-DD>-<sequence>.md` (gitignored, local-only). The `reports/` directory is not committed to version control — it serves as a local log for historical comparison and remediation tracking.
-
-Generate a markdown report with the following structure:
-
-```
-# Security Audit Report — <Cluster Name>
-
-**Date:** YYYY-MM-DD
-**Cluster ID:** <cluster-id>
-**Plan:** Standard | Advanced | Self-hosted
-**CockroachDB Version:** vXX.X.X
-**Regions:** us-east-1, us-west-2
-**Deployment:** CockroachDB Cloud | Self-hosted
-**Environment:** production | staging | development | sandbox
-**Compliance:** SOC 2, PCI DSS | (none specified)
-**Data Sensitivity:** PII/PHI | financial | internal | public
-
-## Summary
-
-| Status | Count |
-|--------|-------|
-| PASS   | X     |
-| WARN   | X     |
-| FAIL   | X     |
-| INFO   | X     |
-| N/A    | X     |
-
 ## Additional details
 
 Further sections for this skill are in [references/additional-details.md](references/additional-details.md).
