@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/cockroachdb/copilot-plugin/compare/v0.1.3...v0.1.4) (2026-07-01)
+
+
+### Bug Fixes
+
+* make skill length-split fence-aware for vally reference extraction ([d577a85](https://github.com/cockroachdb/copilot-plugin/commit/d577a85bd4482abf95c65ff9a7e5d02471e25b28))
+
 ## [0.1.3](https://github.com/cockroachdb/copilot-plugin/compare/v0.1.2...v0.1.3) (2026-07-01)
 
 
