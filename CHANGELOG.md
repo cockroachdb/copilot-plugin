@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/cockroachdb/copilot-plugin/compare/v0.1.2...v0.1.3) (2026-07-01)
+
+
+### Bug Fixes
+
+* make vendored skills pass awesome-copilot vally lint ([30d7d88](https://github.com/cockroachdb/copilot-plugin/commit/30d7d8864114dc30aa64fe4be5a7426570ae239c))
+
 ## [0.1.2](https://github.com/cockroachdb/copilot-plugin/compare/v0.1.1...v0.1.2) (2026-07-01)
 
 
