@@ -11,9 +11,9 @@ metadata:
 
 Analyzes historical transaction performance patterns using aggregated SQL statistics to identify high-retry transactions, contention patterns, and commit latency issues. Uses `crdb_internal.transaction_statistics` for time-windowed analysis of retry behavior, commit latency, and statement composition - entirely via SQL without requiring DB Console access.
 
-**Complement to profiling-statement-fingerprints:** This skill analyzes transaction-level patterns (groups of statements with retry behavior); for statement-level optimization, see [profiling-statement-fingerprints](../profiling-statement-fingerprints/SKILL.md).
+**Complement to profiling-statement-fingerprints:** This skill analyzes transaction-level patterns (groups of statements with retry behavior); for statement-level optimization, see [profiling-statement-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md).
 
-**Complement to triaging-live-sql-activity:** This skill analyzes historical transaction patterns; for immediate triage of currently active transactions, see [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md).
+**Complement to triaging-live-sql-activity:** This skill analyzes historical transaction patterns; for immediate triage of currently active transactions, see [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md).
 
 ## When to Use This Skill
 
@@ -24,8 +24,8 @@ Analyzes historical transaction performance patterns using aggregated SQL statis
 - Investigate transaction retry storms or abort patterns
 - SQL-only historical transaction analysis without DB Console access
 
-**For immediate incident response:** Use [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md) to triage currently active transactions and cancel runaway work.
-**For statement-level optimization:** Use [profiling-statement-fingerprints](../profiling-statement-fingerprints/SKILL.md) to analyze individual query patterns.
+**For immediate incident response:** Use [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md) to triage currently active transactions and cancel runaway work.
+**For statement-level optimization:** Use [profiling-statement-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md) to analyze individual query patterns.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ SHOW CLUSTER SETTING sql.stats.automatic_collection.enabled;
 -- Should return: true
 ```
 
-See [triaging-live-sql-activity permissions reference](../triaging-live-sql-activity/references/permissions.md) for RBAC setup (same privileges).
+See [triaging-live-sql-activity permissions reference](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/references/permissions.md) for RBAC setup (same privileges).
 
 ## Core Concepts
 
@@ -381,7 +381,7 @@ All queries are `SELECT` statements against `crdb_internal.transaction_statistic
 - [JSON field schema and extraction](references/json-field-reference.md)
 - [Metrics catalog and units](references/metrics-and-units.md)
 - [SQL query variations](references/sql-query-variations.md)
-- [RBAC and privileges](../triaging-live-sql-activity/references/permissions.md) (shared with triaging-live-sql-activity)
+- [RBAC and privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/references/permissions.md) (shared with triaging-live-sql-activity)
 
 **Official CockroachDB Documentation:**
 - [crdb_internal](https://www.cockroachlabs.com/docs/stable/crdb-internal.html)
@@ -390,5 +390,5 @@ All queries are `SELECT` statements against `crdb_internal.transaction_statistic
 - [VIEWACTIVITY privilege](https://www.cockroachlabs.com/docs/stable/security-reference/authorization.html#supported-privileges)
 
 **Related skills:**
-- [profiling-statement-fingerprints](../profiling-statement-fingerprints/SKILL.md) - For statement-level optimization
-- [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md) - For immediate triage of active transactions
+- [profiling-statement-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md) - For statement-level optimization
+- [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md) - For immediate triage of active transactions

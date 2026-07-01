@@ -289,8 +289,8 @@ cat client.key | base64 -w 0
 - [TLS troubleshooting guide](references/troubleshooting.md) — Common SSL/TLS errors and fixes
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
-- [configuring-sso-and-scim](../configuring-sso-and-scim/SKILL.md) — SSO as an alternative to certificate-based auth
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — SSO as an alternative to certificate-based auth
 
 **Official CockroachDB Documentation:**
 - [Transport Layer Security (TLS)](https://www.cockroachlabs.com/docs/stable/security-reference/transport-layer-security.html)

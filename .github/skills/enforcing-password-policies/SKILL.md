@@ -206,9 +206,9 @@ RESET CLUSTER SETTING server.user_login.password_hashes.default_cost.crdb_bcrypt
 - [SQL queries for password policies](references/sql-queries.md)
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
-- [configuring-sso-and-scim](../configuring-sso-and-scim/SKILL.md) — Use SSO to eliminate password-based authentication
-- [managing-tls-certificates](../managing-tls-certificates/SKILL.md) — Use certificate-based authentication instead of passwords
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — Use SSO to eliminate password-based authentication
+- [managing-tls-certificates](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/managing-tls-certificates/SKILL.md) — Use certificate-based authentication instead of passwords
 
 **Official CockroachDB Documentation:**
 - [Cluster Settings Reference](https://www.cockroachlabs.com/docs/stable/cluster-settings.html)

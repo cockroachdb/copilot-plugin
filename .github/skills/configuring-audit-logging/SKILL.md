@@ -176,8 +176,8 @@ RESET CLUSTER SETTING sql.log.slow_query.latency_threshold;
 - [SQL queries for audit logging](references/sql-queries.md)
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
-- [hardening-user-privileges](../hardening-user-privileges/SKILL.md) — Create purpose-specific roles for targeted auditing
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [hardening-user-privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md) — Create purpose-specific roles for targeted auditing
 
 **Official CockroachDB Documentation:**
 - [SQL Audit Logging](https://www.cockroachlabs.com/docs/stable/sql-audit-logging.html)

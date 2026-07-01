@@ -710,7 +710,7 @@ All queries in this reference follow production-safe patterns:
 ## References
 
 **Related skill documentation:**
-- [Main skill guide](../SKILL.md)
+- [Main skill guide](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/monitoring-background-jobs/SKILL.md)
 - [Job types catalog](job-types.md)
 - [Job states reference](job-states.md)
 - [Permissions setup](permissions.md)

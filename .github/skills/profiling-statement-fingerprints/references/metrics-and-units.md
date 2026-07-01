@@ -560,5 +560,5 @@ WHERE aggregated_ts > now() - INTERVAL '1 hour';
 
 - **JSON schema:** [json-field-reference.md](json-field-reference.md)
 - **Query examples:** [sql-query-variations.md](sql-query-variations.md)
-- **Main skill:** [../SKILL.md](../SKILL.md)
+- **Main skill:** [../SKILL.md](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md)
 - **Official docs:** [Statements Page](https://www.cockroachlabs.com/docs/stable/ui-statements-page.html)

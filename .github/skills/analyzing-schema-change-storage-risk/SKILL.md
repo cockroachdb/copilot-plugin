@@ -15,7 +15,7 @@ some operations may temporarily require up to **3× the size of the affected
 table or index** while the schema change is in flight.
 
 For ongoing range-distribution monitoring, see
-[analyzing-range-distribution](../analyzing-range-distribution/SKILL.md).
+[analyzing-range-distribution](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-range-distribution/SKILL.md).
 
 ## When to Use This Skill
 
@@ -152,4 +152,8 @@ indexes, expand storage) before issuing the DDL.
 
 ## Related Skills
 
-- [analyzing-range-distribution](../analyzing-range-distribution/SKILL.md) — range count, leaseholder placement, fragmentation
+- [analyzing-range-distribution](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-range-distribution/SKILL.md) — range count, leaseholder placement, fragmentation
+
+## Additional references
+
+- [permissions.md](references/permissions.md)

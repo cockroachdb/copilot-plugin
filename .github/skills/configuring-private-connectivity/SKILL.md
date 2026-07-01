@@ -326,8 +326,8 @@ After removing private connectivity, ensure the IP allowlist is configured to al
 - [Cloud provider setup steps](references/cloud-provider-setup.md)
 
 **Related skills:**
-- [configuring-ip-allowlists](../configuring-ip-allowlists/SKILL.md) — IP-based network access control
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [configuring-ip-allowlists](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-ip-allowlists/SKILL.md) — IP-based network access control
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
 
 **Official CockroachDB Documentation:**
 - [Network Authorization](https://www.cockroachlabs.com/docs/cockroachcloud/network-authorization.html)

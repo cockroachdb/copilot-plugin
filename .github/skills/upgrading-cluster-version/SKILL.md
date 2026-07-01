@@ -19,9 +19,9 @@ Guides CockroachDB version upgrades end-to-end. Before providing procedures, thi
 - Verifying upgrade completion (all tiers)
 - Deciding whether to finalize or roll back (Self-Hosted)
 
-**For pre-upgrade health check:** Use [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md).
-**For node drain during Self-Hosted upgrade:** Use [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md).
-**For maintenance window configuration:** Use [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md).
+**For pre-upgrade health check:** Use [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md).
+**For node drain during Self-Hosted upgrade:** Use [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md).
+**For maintenance window configuration:** Use [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md).
 
 ---
 
@@ -187,7 +187,7 @@ Tally the `build` column to see how many nodes are on the new version vs the old
 
 ### Patch Upgrades
 
-Patches are applied automatically during the configured maintenance window. See [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md) for maintenance window configuration and patch deferral.
+Patches are applied automatically during the configured maintenance window. See [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md) for maintenance window configuration and patch deferral.
 
 ### Release Channel
 
@@ -296,9 +296,9 @@ Basic is a serverless offering. All upgrades are fully managed and transparent. 
 ## References
 
 **Related skills:**
-- [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md) — Pre/post-upgrade health
-- [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md) — Node drain (SH) and maintenance windows (ADV/BYOC)
-- [managing-cluster-settings](../managing-cluster-settings/SKILL.md) — preserve_downgrade_option
+- [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md) — Pre/post-upgrade health
+- [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md) — Node drain (SH) and maintenance windows (ADV/BYOC)
+- [managing-cluster-settings](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-settings/SKILL.md) — preserve_downgrade_option
 
 **Official CockroachDB Documentation:**
 - [Upgrade Self-Hosted](https://www.cockroachlabs.com/docs/stable/upgrade-cockroach-version)

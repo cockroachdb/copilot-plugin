@@ -41,7 +41,7 @@ Current allowlist:
 |------|------|-----|-----|
 | 0.0.0.0/0 | Default - Allow all | Yes | No |
 
-**Remediation:** [configuring-ip-allowlists](../../configuring-ip-allowlists/SKILL.md)
+**Remediation:** [configuring-ip-allowlists](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-ip-allowlists/SKILL.md)
 - "Explain how to fix this" — The skill walks through listing current entries, identifying authorized CIDR ranges, adding specific entries, and removing `0.0.0.0/0`
 - "Help me fix this now" — Interactively add your office/VPN CIDRs and remove the open entry
 
@@ -51,7 +51,7 @@ Current allowlist:
 
 SSO is not configured for the CockroachDB Cloud organization. Users authenticate with passwords. Check the Cloud Console UI (Organization Settings > Authentication) to verify.
 
-**Remediation:** [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) — Part 1: Cloud Console SSO
+**Remediation:** [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — Part 1: Cloud Console SSO
 
 ---
 
@@ -63,7 +63,7 @@ server.oidc_authentication.enabled = false
 
 SQL authentication uses passwords only. Cluster SSO via OIDC is not enabled.
 
-**Remediation:** [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) — Part 2: Database SSO
+**Remediation:** [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — Part 2: Database SSO
 
 ---
 
@@ -71,7 +71,7 @@ SQL authentication uses passwords only. Cluster SSO via OIDC is not enabled.
 
 SCIM automated user provisioning is not enabled. User lifecycle (creation, deactivation) must be managed manually. Check the Cloud Console UI (Organization Settings > Authentication > SCIM) to verify.
 
-**Remediation:** [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) — Part 3: SCIM 2.0
+**Remediation:** [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — Part 3: SCIM 2.0
 
 ---
 
@@ -83,7 +83,7 @@ server.identity_map.configuration = '' (empty)
 
 SQL users are not automatically provisioned from IdP identities. Users must be created manually via `CREATE USER` or `ccloud cluster user create`.
 
-**Remediation:** [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) — Part 4: Auto User Provisioning
+**Remediation:** [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — Part 4: Auto User Provisioning
 
 ### Authorization
 
@@ -102,7 +102,7 @@ SQL users are not automatically provisioned from IdP identities. Users must be c
 
 8 users have the admin role. The threshold for FAIL is 6+. Only 1-2 admin users are recommended for production clusters. Each admin user should have a documented justification.
 
-**Remediation:** [hardening-user-privileges](../../hardening-user-privileges/SKILL.md)
+**Remediation:** [hardening-user-privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md)
 - Create purpose-specific roles (analyst_reader, app_service, ops_triage)
 - Reassign users to appropriate roles
 - Revoke admin from users who don't need full cluster control
@@ -119,7 +119,7 @@ The PUBLIC role has SELECT granted on `test_db.public.test_table`. This means an
 
 Note: `SHOW GRANTS FOR public` is scoped to the current database. The audit checked `defaultdb` and `test_db`. The `defaultdb` PUBLIC grants on `crdb_internal`, `information_schema`, and `pg_catalog` system tables are default and expected.
 
-**Remediation:** [hardening-user-privileges](../../hardening-user-privileges/SKILL.md)
+**Remediation:** [hardening-user-privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md)
 ```sql
 -- Revoke PUBLIC SELECT on application tables
 REVOKE SELECT ON TABLE test_db.public.test_table FROM public;
@@ -134,7 +134,7 @@ This cluster is on the Basic plan. Customer-Managed Encryption Keys (CMEK) requi
 To enable CMEK:
 1. Upgrade to the Advanced plan
 2. Enable the Advanced Security Add-on
-3. Follow [enabling-cmek-encryption](../../enabling-cmek-encryption/SKILL.md)
+3. Follow [enabling-cmek-encryption](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/enabling-cmek-encryption/SKILL.md)
 
 ---
 
@@ -153,7 +153,7 @@ sql.log.admin_audit.enabled = false
 
 Neither user audit logging nor admin audit logging is enabled. No SQL activity is being recorded for security review.
 
-**Remediation:** [configuring-audit-logging](../../configuring-audit-logging/SKILL.md)
+**Remediation:** [configuring-audit-logging](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-audit-logging/SKILL.md)
 ```sql
 -- Minimum recommended: enable admin audit logging
 SET CLUSTER SETTING sql.log.admin_audit.enabled = true;
@@ -172,7 +172,7 @@ server.user_login.min_password_length = 1
 
 The minimum password length is set to 1, which effectively disables password length enforcement. NIST 800-63B and SOC 2 recommend a minimum of 8 characters; 12+ is best practice.
 
-**Remediation:** [enforcing-password-policies](../../enforcing-password-policies/SKILL.md)
+**Remediation:** [enforcing-password-policies](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/enforcing-password-policies/SKILL.md)
 ```sql
 -- Set minimum password length to 12 (recommended)
 SET CLUSTER SETTING server.user_login.min_password_length = 12;
@@ -205,15 +205,15 @@ Ordered by priority (highest risk first):
 
 | # | Finding | Severity | Remediation Skill | Quick Fix |
 |---|---------|----------|-------------------|-----------|
-| 1 | IP allowlist 0.0.0.0/0 | WARN | [configuring-ip-allowlists](../../configuring-ip-allowlists/SKILL.md) | Add specific CIDRs, remove 0.0.0.0/0 |
-| 2 | 8 admin users | FAIL | [hardening-user-privileges](../../hardening-user-privileges/SKILL.md) | Create roles, revoke admin |
-| 3 | PUBLIC has SELECT | FAIL | [hardening-user-privileges](../../hardening-user-privileges/SKILL.md) | `REVOKE SELECT ... FROM public` |
-| 4 | Audit logging disabled | FAIL | [configuring-audit-logging](../../configuring-audit-logging/SKILL.md) | Enable admin + role-based audit |
-| 5 | Password min length = 1 | FAIL | [enforcing-password-policies](../../enforcing-password-policies/SKILL.md) | Set min length to 12 |
-| 6 | SSO not configured | FAIL | [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) | Configure SAML/OIDC SSO |
-| 7 | SCIM not enabled | FAIL | [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) | Enable SCIM endpoint |
-| 8 | Database SSO disabled | FAIL | [configuring-sso-and-scim](../../configuring-sso-and-scim/SKILL.md) | Enable Cluster SSO |
-| 9 | CMEK not available | INFO | [enabling-cmek-encryption](../../enabling-cmek-encryption/SKILL.md) | Upgrade to Advanced plan |
+| 1 | IP allowlist 0.0.0.0/0 | WARN | [configuring-ip-allowlists](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-ip-allowlists/SKILL.md) | Add specific CIDRs, remove 0.0.0.0/0 |
+| 2 | 8 admin users | FAIL | [hardening-user-privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md) | Create roles, revoke admin |
+| 3 | PUBLIC has SELECT | FAIL | [hardening-user-privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md) | `REVOKE SELECT ... FROM public` |
+| 4 | Audit logging disabled | FAIL | [configuring-audit-logging](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-audit-logging/SKILL.md) | Enable admin + role-based audit |
+| 5 | Password min length = 1 | FAIL | [enforcing-password-policies](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/enforcing-password-policies/SKILL.md) | Set min length to 12 |
+| 6 | SSO not configured | FAIL | [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) | Configure SAML/OIDC SSO |
+| 7 | SCIM not enabled | FAIL | [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) | Enable SCIM endpoint |
+| 8 | Database SSO disabled | FAIL | [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) | Enable Cluster SSO |
+| 9 | CMEK not available | INFO | [enabling-cmek-encryption](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/enabling-cmek-encryption/SKILL.md) | Upgrade to Advanced plan |
 
 ## How to Use This Report
 

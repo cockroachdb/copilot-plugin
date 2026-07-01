@@ -195,7 +195,7 @@ CMEK cannot be disabled once enabled on a cluster. However:
 ## References
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
 
 **Official CockroachDB Documentation:**
 - [CMEK Overview](https://www.cockroachlabs.com/docs/cockroachcloud/cmek.html)

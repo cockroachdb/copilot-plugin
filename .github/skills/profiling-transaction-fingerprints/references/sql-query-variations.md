@@ -626,5 +626,5 @@ ORDER BY avg_max_retries DESC;
 
 - **JSON schema:** [json-field-reference.md](json-field-reference.md)
 - **Metrics interpretation:** [metrics-and-units.md](metrics-and-units.md)
-- **Main skill:** [../SKILL.md](../SKILL.md)
+- **Main skill:** [../SKILL.md](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-transaction-fingerprints/SKILL.md)
 - **Official docs:** [Transactions Page](https://www.cockroachlabs.com/docs/stable/ui-transactions-page.html)

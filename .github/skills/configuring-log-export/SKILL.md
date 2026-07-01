@@ -255,8 +255,8 @@ Log export can be re-enabled at any time with the same or different configuratio
 - [Cloud provider IAM setup](references/cloud-provider-setup.md)
 
 **Related skills:**
-- [configuring-audit-logging](../configuring-audit-logging/SKILL.md) — Enable SQL audit logging (must be enabled for audit logs to appear in export)
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [configuring-audit-logging](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-audit-logging/SKILL.md) — Enable SQL audit logging (must be enabled for audit logs to appear in export)
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
 
 **Official CockroachDB Documentation:**
 - [Export Logs From a CockroachDB Cloud Cluster](https://www.cockroachlabs.com/docs/cockroachcloud/export-logs.html)

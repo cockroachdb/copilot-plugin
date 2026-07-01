@@ -21,9 +21,9 @@ Manages planned cluster maintenance across all deployment tiers. For Self-Hosted
 - Understanding how maintenance affects your application (all tiers)
 - Preparing applications for maintenance events (all tiers)
 
-**For permanent node removal:** Use [managing-cluster-capacity](../managing-cluster-capacity/SKILL.md).
-**For pre-maintenance health check:** Use [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md).
-**For version upgrades:** Use [upgrading-cluster-version](../upgrading-cluster-version/SKILL.md).
+**For permanent node removal:** Use [managing-cluster-capacity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-capacity/SKILL.md).
+**For pre-maintenance health check:** Use [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md).
+**For version upgrades:** Use [upgrading-cluster-version](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/upgrading-cluster-version/SKILL.md).
 
 ---
 
@@ -368,9 +368,9 @@ See [safety-guide reference](references/safety-guide.md) for detailed risk matri
 - [Safety guide](references/safety-guide.md)
 
 **Related skills:**
-- [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md)
-- [managing-cluster-capacity](../managing-cluster-capacity/SKILL.md)
-- [upgrading-cluster-version](../upgrading-cluster-version/SKILL.md)
+- [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md)
+- [managing-cluster-capacity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-capacity/SKILL.md)
+- [upgrading-cluster-version](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/upgrading-cluster-version/SKILL.md)
 
 **Official CockroachDB Documentation:**
 - [Node Shutdown](https://www.cockroachlabs.com/docs/stable/node-shutdown)

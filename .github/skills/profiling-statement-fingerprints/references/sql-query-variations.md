@@ -673,4 +673,4 @@ ORDER BY aggregated_ts, fingerprint_id;
 
 - **JSON field details:** [json-field-reference.md](json-field-reference.md)
 - **Metric interpretation:** [metrics-and-units.md](metrics-and-units.md)
-- **Main skill:** [../SKILL.md](../SKILL.md)
+- **Main skill:** [../SKILL.md](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md)

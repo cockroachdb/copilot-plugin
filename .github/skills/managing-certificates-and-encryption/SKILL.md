@@ -20,7 +20,7 @@ Manages TLS certificate and encryption key lifecycle across all deployment tiers
 - Auditing encryption posture for compliance (all tiers)
 - Adding DNS names or IPs to node certificates (Self-Hosted)
 
-**For daily health checks:** Use [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md).
+**For daily health checks:** Use [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md).
 
 ---
 
@@ -217,8 +217,8 @@ See [safety-guide reference](references/safety-guide.md) for detailed risk matri
 - [Safety guide](references/safety-guide.md)
 
 **Related skills:**
-- [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md)
-- [managing-cluster-settings](../managing-cluster-settings/SKILL.md)
+- [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md)
+- [managing-cluster-settings](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-settings/SKILL.md)
 
 **Official CockroachDB Documentation:**
 - [Rotate Security Certificates](https://www.cockroachlabs.com/docs/stable/rotate-certificates)

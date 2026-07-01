@@ -18,9 +18,9 @@ Guides CockroachDB cluster creation and production deployment configuration. Bef
 - Validating hardware and configuration for production readiness
 - Choosing the right deployment tier and sizing
 
-**For post-deployment health checks:** Use [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md).
-**For ongoing settings management:** Use [managing-cluster-settings](../managing-cluster-settings/SKILL.md).
-**For capacity changes after deployment:** Use [managing-cluster-capacity](../managing-cluster-capacity/SKILL.md).
+**For post-deployment health checks:** Use [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md).
+**For ongoing settings management:** Use [managing-cluster-settings](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-settings/SKILL.md).
+**For capacity changes after deployment:** Use [managing-cluster-capacity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-capacity/SKILL.md).
 
 ---
 
@@ -235,7 +235,7 @@ resource "cockroach_cluster" "production" {
 
 - Configure IP allowlists or VPC Peering/PrivateLink
 - Create SQL users and databases
-- Set maintenance window (see [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md))
+- Set maintenance window (see [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md))
 - Configure metrics export to Datadog/Prometheus if needed
 
 ---
@@ -297,7 +297,7 @@ Follow [Advanced Provisioning](#advanced-provisioning) steps — BYOC uses the s
 | `cockroach init` | SH | Safe — only runs once; subsequent calls are no-ops |
 | Certificate generation | SH | Store CA key securely — loss means no new certs |
 | Cloud cluster creation | ADV/BYOC/STD/BAS | Safe — can be deleted if misconfigured |
-| Production settings changes | SH | See [managing-cluster-settings](../managing-cluster-settings/SKILL.md) |
+| Production settings changes | SH | See [managing-cluster-settings](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-settings/SKILL.md) |
 
 **Critical (Self-Hosted):**
 - Never use `--insecure` in production — always use TLS
@@ -324,10 +324,10 @@ Follow [Advanced Provisioning](#advanced-provisioning) steps — BYOC uses the s
 - [Production deployment checklist](references/production-deployment-checklist.md)
 
 **Related skills:**
-- [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md) — Post-deployment health check
-- [managing-cluster-settings](../managing-cluster-settings/SKILL.md) — Production settings
-- [managing-certificates-and-encryption](../managing-certificates-and-encryption/SKILL.md) — TLS setup
-- [managing-cluster-capacity](../managing-cluster-capacity/SKILL.md) — Scaling after deployment
+- [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md) — Post-deployment health check
+- [managing-cluster-settings](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-settings/SKILL.md) — Production settings
+- [managing-certificates-and-encryption](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-certificates-and-encryption/SKILL.md) — TLS setup
+- [managing-cluster-capacity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/managing-cluster-capacity/SKILL.md) — Scaling after deployment
 
 **Official CockroachDB Documentation:**
 - [Install CockroachDB](https://www.cockroachlabs.com/docs/stable/install-cockroachdb)

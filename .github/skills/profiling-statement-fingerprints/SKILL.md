@@ -11,7 +11,7 @@ metadata:
 
 Analyzes historical statement performance patterns using aggregated SQL statistics to identify slow, resource-intensive, or error-prone query fingerprints. Uses `crdb_internal.statement_statistics` for time-windowed analysis of latency, CPU, contention, admission delays, and failure rates - entirely via SQL without requiring DB Console access.
 
-**Complement to triaging-live-sql-activity:** This skill analyzes historical patterns; for immediate triage of currently running queries, see [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md).
+**Complement to triaging-live-sql-activity:** This skill analyzes historical patterns; for immediate triage of currently running queries, see [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md).
 
 ## When to Use This Skill
 
@@ -22,9 +22,9 @@ Analyzes historical statement performance patterns using aggregated SQL statisti
 - Analyze resource consumption by application or database
 - SQL-only historical analysis without DB Console access
 
-**For immediate incident response:** Use [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md) to triage currently running queries and cancel runaway work.
-**For transaction-level analysis:** Use [profiling-transaction-fingerprints](../profiling-transaction-fingerprints/SKILL.md) to analyze retry patterns, commit latency, and statement composition at the transaction boundary.
-**For background job monitoring:** Use [monitoring-background-jobs](../monitoring-background-jobs/SKILL.md) for long-running schema changes and automatic jobs excluded from statement statistics.
+**For immediate incident response:** Use [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md) to triage currently running queries and cancel runaway work.
+**For transaction-level analysis:** Use [profiling-transaction-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-transaction-fingerprints/SKILL.md) to analyze retry patterns, commit latency, and statement composition at the transaction boundary.
+**For background job monitoring:** Use [monitoring-background-jobs](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/monitoring-background-jobs/SKILL.md) for long-running schema changes and automatic jobs excluded from statement statistics.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Analyzes historical statement performance patterns using aggregated SQL statisti
 SHOW CLUSTER SETTING sql.stats.automatic_collection.enabled;  -- Should return: true
 ```
 
-See [triaging-live-sql-activity permissions reference](../triaging-live-sql-activity/references/permissions.md) for RBAC setup (same privileges).
+See [triaging-live-sql-activity permissions reference](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/references/permissions.md) for RBAC setup (same privileges).
 
 ## Core Concepts
 
@@ -316,7 +316,7 @@ LIMIT 20;
 - [JSON field schema and extraction](references/json-field-reference.md)
 - [Metrics catalog and units](references/metrics-and-units.md)
 - [SQL query variations](references/sql-query-variations.md)
-- [RBAC and privileges](../triaging-live-sql-activity/references/permissions.md) (shared with triaging-live-sql-activity)
+- [RBAC and privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/references/permissions.md) (shared with triaging-live-sql-activity)
 
 **Official CockroachDB Documentation:**
 - [crdb_internal](https://www.cockroachlabs.com/docs/stable/crdb-internal.html)
@@ -325,5 +325,5 @@ LIMIT 20;
 - [VIEWACTIVITY privilege](https://www.cockroachlabs.com/docs/stable/security-reference/authorization.html#supported-privileges)
 
 **Related skills:**
-- [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md) - For immediate triage of currently running queries
-- [profiling-transaction-fingerprints](../profiling-transaction-fingerprints/SKILL.md) - For transaction-level analysis including retry patterns and commit latency
+- [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md) - For immediate triage of currently running queries
+- [profiling-transaction-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-transaction-fingerprints/SKILL.md) - For transaction-level analysis including retry patterns and commit latency

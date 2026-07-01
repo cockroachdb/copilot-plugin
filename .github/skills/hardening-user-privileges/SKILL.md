@@ -246,8 +246,8 @@ SELECT * FROM [SHOW SYSTEM GRANTS];
 - [SQL queries for privilege hardening](references/sql-queries.md)
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
-- [configuring-audit-logging](../configuring-audit-logging/SKILL.md) — Set up audit logging for privilege-sensitive operations
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [configuring-audit-logging](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-audit-logging/SKILL.md) — Set up audit logging for privilege-sensitive operations
 
 **Official CockroachDB Documentation:**
 - [Authorization Overview](https://www.cockroachlabs.com/docs/stable/security-reference/authorization.html)

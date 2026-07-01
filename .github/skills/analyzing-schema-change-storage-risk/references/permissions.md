@@ -310,8 +310,8 @@ ALTER TABLE orders CONFIGURE ZONE USING lease_preferences = '[[+region=us-west]]
 
 ## Related Documentation
 
-- [Main skill: analyzing-range-distribution](../SKILL.md)
-- [Main skill: analyzing-schema-change-storage-risk](../../analyzing-schema-change-storage-risk/SKILL.md)
+- [Main skill: analyzing-range-distribution](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-schema-change-storage-risk/SKILL.md)
+- [Main skill: analyzing-schema-change-storage-risk](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-schema-change-storage-risk/SKILL.md)
 - [CockroachDB Authorization Reference](https://www.cockroachlabs.com/docs/stable/security-reference/authorization.html)
 - [GRANT (Privileges)](https://www.cockroachlabs.com/docs/stable/grant.html)
 - [SHOW GRANTS](https://www.cockroachlabs.com/docs/stable/show-grants.html)

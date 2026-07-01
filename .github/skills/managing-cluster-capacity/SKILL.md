@@ -22,8 +22,8 @@ Manages cluster capacity across all CockroachDB deployment tiers. What "capacity
 - Replacing a failed or dead node (Self-Hosted)
 - Managing storage utilization and disk pressure (Self-Hosted)
 
-**For temporary maintenance (not capacity changes):** Use [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md).
-**For pre-operation health check:** Use [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md).
+**For temporary maintenance (not capacity changes):** Use [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md).
+**For pre-operation health check:** Use [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md).
 
 ---
 
@@ -356,9 +356,9 @@ If you need explicit control over compute capacity (guaranteed vCPUs), consider 
 - [Storage management](references/storage-management.md)
 
 **Related skills:**
-- [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md) — Pre/post health checks
-- [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md) — Drain procedure (SH)
-- [upgrading-cluster-version](../upgrading-cluster-version/SKILL.md) — Upgrades and lifecycle
+- [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md) — Pre/post health checks
+- [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md) — Drain procedure (SH)
+- [upgrading-cluster-version](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/upgrading-cluster-version/SKILL.md) — Upgrades and lifecycle
 
 **Official CockroachDB Documentation:**
 - [cockroach node decommission](https://www.cockroachlabs.com/docs/stable/cockroach-node.html)

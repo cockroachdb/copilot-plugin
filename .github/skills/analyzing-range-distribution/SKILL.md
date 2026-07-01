@@ -11,7 +11,7 @@ metadata:
 
 Analyzes CockroachDB range distribution, leaseholder placement, and zone configuration compliance using `SHOW RANGES` and `SHOW ZONE CONFIGURATIONS` commands. Identifies range count anomalies, size imbalances, leaseholder hotspots, and replication issues - entirely via SQL without requiring DB Console access.
 
-**Complement to profiling skills:** This skill analyzes range-level data distribution; for query performance patterns, see [profiling-statement-fingerprints](../profiling-statement-fingerprints/SKILL.md). For schema change storage planning, see [analyzing-schema-change-storage-risk](../analyzing-schema-change-storage-risk/SKILL.md).
+**Complement to profiling skills:** This skill analyzes range-level data distribution; for query performance patterns, see [profiling-statement-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md). For schema change storage planning, see [analyzing-schema-change-storage-risk](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-schema-change-storage-risk/SKILL.md).
 
 ## When to Use This Skill
 
@@ -23,7 +23,7 @@ Analyzes CockroachDB range distribution, leaseholder placement, and zone configu
 - Analyze range split patterns from high write volume
 - SQL-only range analysis without DB Console access
 
-**For schema change planning:** Use [analyzing-schema-change-storage-risk](../analyzing-schema-change-storage-risk/SKILL.md) to estimate storage requirements before CREATE INDEX or ADD COLUMN operations.
+**For schema change planning:** Use [analyzing-schema-change-storage-risk](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-schema-change-storage-risk/SKILL.md) to estimate storage requirements before CREATE INDEX or ADD COLUMN operations.
 
 ## Prerequisites
 
@@ -341,6 +341,6 @@ See [permissions reference](references/permissions.md) for granting minimal priv
 - [ZONECONFIG privilege](https://www.cockroachlabs.com/docs/stable/security-reference/authorization.html#supported-privileges)
 
 **Related skills:**
-- [profiling-statement-fingerprints](../profiling-statement-fingerprints/SKILL.md) - For query performance analysis
-- [triaging-live-sql-activity](../triaging-live-sql-activity/SKILL.md) - For real-time query triage
-- [analyzing-schema-change-storage-risk](../analyzing-schema-change-storage-risk/SKILL.md) - For estimating storage requirements before DDL operations
+- [profiling-statement-fingerprints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md) - For query performance analysis
+- [triaging-live-sql-activity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md) - For real-time query triage
+- [analyzing-schema-change-storage-risk](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-schema-change-storage-risk/SKILL.md) - For estimating storage requirements before DDL operations

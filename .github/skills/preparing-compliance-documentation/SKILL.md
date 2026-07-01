@@ -167,7 +167,7 @@ When responding to customer or auditor questionnaires, reference these standard 
 ### 5. Prepare for Compliance Audits
 
 **Before the audit:**
-1. Run the [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) skill to identify gaps
+1. Run the [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) skill to identify gaps
 2. Remediate any FAIL findings using the linked remediation skills
 3. Download current compliance documents from the Trust Center
 4. Document your CockroachDB Cloud configuration with screenshots or Terraform state
@@ -198,15 +198,15 @@ When responding to customer or auditor questionnaires, reference these standard 
 - [Compliance control matrix](references/compliance-matrix.md)
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Automated security posture assessment
-- [configuring-audit-logging](../configuring-audit-logging/SKILL.md) — Enable audit logging for compliance
-- [enabling-cmek-encryption](../enabling-cmek-encryption/SKILL.md) — Enable customer-managed encryption keys
-- [configuring-sso-and-scim](../configuring-sso-and-scim/SKILL.md) — Enable SSO and automated provisioning
-- [hardening-user-privileges](../hardening-user-privileges/SKILL.md) — Implement least-privilege access
-- [enforcing-password-policies](../enforcing-password-policies/SKILL.md) — Configure password requirements
-- [configuring-ip-allowlists](../configuring-ip-allowlists/SKILL.md) — Network access control
-- [configuring-private-connectivity](../configuring-private-connectivity/SKILL.md) — Private network endpoints
-- [configuring-log-export](../configuring-log-export/SKILL.md) — Export logs for compliance retention
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Automated security posture assessment
+- [configuring-audit-logging](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-audit-logging/SKILL.md) — Enable audit logging for compliance
+- [enabling-cmek-encryption](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/enabling-cmek-encryption/SKILL.md) — Enable customer-managed encryption keys
+- [configuring-sso-and-scim](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md) — Enable SSO and automated provisioning
+- [hardening-user-privileges](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md) — Implement least-privilege access
+- [enforcing-password-policies](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/enforcing-password-policies/SKILL.md) — Configure password requirements
+- [configuring-ip-allowlists](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-ip-allowlists/SKILL.md) — Network access control
+- [configuring-private-connectivity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-private-connectivity/SKILL.md) — Private network endpoints
+- [configuring-log-export](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-log-export/SKILL.md) — Export logs for compliance retention
 
 **Official CockroachDB Documentation:**
 - [CockroachDB Cloud Security Overview](https://www.cockroachlabs.com/docs/cockroachcloud/security-overview.html)

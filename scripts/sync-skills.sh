@@ -29,8 +29,16 @@ while IFS= read -r skillmd; do
     echo "error: duplicate skill name across domains: $name" >&2
     exit 1
   fi
-  cp -R "$skill_dir" "$DST/$name"
+  # -L dereferences symlinks so each skill is self-contained regular files
+  # (upstream uses symlinks for shared reference files; those would dangle
+  # once flattened).
+  cp -RL "$skill_dir" "$DST/$name"
   count=$((count + 1))
 done < <(find "$SRC" -name SKILL.md | sort)
 
 echo "synced $count skills into $DST/"
+
+# Make the vendored skills pass awesome-copilot's vally lint: rewrite
+# cross-skill links to upstream URLs, link orphan reference files, and split
+# over-length SKILL.md files.
+python3 "$(dirname "$0")/transform-skills-for-copilot.py" "$DST" "$SRC"

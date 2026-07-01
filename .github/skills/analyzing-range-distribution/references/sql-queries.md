@@ -546,7 +546,7 @@ ORDER BY range_id LIMIT 50;
 
 ## Related Documentation
 
-- [Main skill documentation](../SKILL.md)
+- [Main skill documentation](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-observability-and-diagnostics/analyzing-range-distribution/SKILL.md)
 - [Permissions reference](permissions.md)
 - [CockroachDB SHOW RANGES documentation](https://www.cockroachlabs.com/docs/stable/show-ranges.html)
 - [CockroachDB SHOW ZONE CONFIGURATIONS documentation](https://www.cockroachlabs.com/docs/stable/show-zone-configurations.html)

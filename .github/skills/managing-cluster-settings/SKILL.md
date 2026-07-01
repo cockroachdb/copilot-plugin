@@ -20,8 +20,8 @@ Reviews, audits, and modifies CockroachDB cluster settings. Before providing pro
 - Understanding which settings are modifiable on your tier
 - Managing enterprise license installation and renewal (Self-Hosted)
 
-**For version management:** Use [upgrading-cluster-version](../upgrading-cluster-version/SKILL.md) — do not change settings during an upgrade.
-**For health checks:** Use [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md).
+**For version management:** Use [upgrading-cluster-version](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/upgrading-cluster-version/SKILL.md) — do not change settings during an upgrade.
+**For health checks:** Use [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md).
 
 ---
 
@@ -125,7 +125,7 @@ RESET CLUSTER SETTING <name>;
 
 ### Node-Level Settings (require node restart)
 
-Node-level settings are `cockroach start` flags and cannot be changed at runtime. To change: drain the node, stop the process, update flags, restart. See [performing-cluster-maintenance](../performing-cluster-maintenance/SKILL.md).
+Node-level settings are `cockroach start` flags and cannot be changed at runtime. To change: drain the node, stop the process, update flags, restart. See [performing-cluster-maintenance](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md).
 
 See [node-level-settings reference](references/node-level-settings.md) for the complete list of start flags.
 
@@ -284,8 +284,8 @@ See [safety-guide reference](references/safety-guide.md) for detailed risk asses
 - [Safety guide](references/safety-guide.md)
 
 **Related skills:**
-- [reviewing-cluster-health](../reviewing-cluster-health/SKILL.md)
-- [upgrading-cluster-version](../upgrading-cluster-version/SKILL.md)
+- [reviewing-cluster-health](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md)
+- [upgrading-cluster-version](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-operations-and-lifecycle/upgrading-cluster-version/SKILL.md)
 
 **Official CockroachDB Documentation:**
 - [Cluster Settings](https://www.cockroachlabs.com/docs/stable/cluster-settings)

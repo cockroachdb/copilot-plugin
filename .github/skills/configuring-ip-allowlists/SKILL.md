@@ -54,7 +54,7 @@ See [ccloud commands reference](references/ccloud-commands.md) for full command 
 CockroachDB Cloud clusters have a maximum number of IP allowlist entries per cluster. If you need more entries than the limit allows:
 
 - **Consolidate entries:** Use broader CIDR ranges where security permits (e.g., combine several `/32` entries into a `/24`)
-- **Use private endpoints:** Switch to [private endpoints](../configuring-private-connectivity/SKILL.md) instead of allowlists for VPC-based access — private endpoints bypass the allowlist entirely
+- **Use private endpoints:** Switch to [private endpoints](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-private-connectivity/SKILL.md) instead of allowlists for VPC-based access — private endpoints bypass the allowlist entirely
 - **Request a limit increase:** Contact CockroachDB Cloud support if consolidation and private endpoints are not sufficient
 
 ### 3. Identify Required CIDR Ranges
@@ -161,8 +161,8 @@ ccloud cluster networking allowlist create <cluster-name> 0.0.0.0/0 \
 - [ccloud commands for IP allowlists](references/ccloud-commands.md)
 
 **Related skills:**
-- [auditing-cloud-cluster-security](../auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
-- [configuring-private-connectivity](../configuring-private-connectivity/SKILL.md) — Private endpoints as an alternative to IP allowlists
+- [auditing-cloud-cluster-security](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md) — Run a full security posture audit
+- [configuring-private-connectivity](https://github.com/cockroachlabs/cockroachdb-skills/blob/main/skills/cockroachdb-security-and-governance/configuring-private-connectivity/SKILL.md) — Private endpoints as an alternative to IP allowlists
 
 **Official CockroachDB Documentation:**
 - [Network Authorization](https://www.cockroachlabs.com/docs/cockroachcloud/network-authorization.html)

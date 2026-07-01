@@ -114,3 +114,13 @@ LIMIT 50;
 
 - `references/cockroachdb-rules/` - CockroachDB SQL rules 
 - `references/EXAMPLES.md` - SQL examples and patterns
+
+## Additional references
+
+- [EXAMPLES.md](references/EXAMPLES.md)
+- [00-fundamental-principles.md](references/cockroachdb-rules/00-fundamental-principles.md)
+- [01-schema-design.md](references/cockroachdb-rules/01-schema-design.md)
+- [02-dml-operations.md](references/cockroachdb-rules/02-dml-operations.md)
+- [03-query-patterns.md](references/cockroachdb-rules/03-query-patterns.md)
+- [04-optimization.md](references/cockroachdb-rules/04-optimization.md)
+- [05-operational.md](references/cockroachdb-rules/05-operational.md)
