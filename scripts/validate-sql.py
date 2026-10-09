@@ -9,31 +9,49 @@ Output is written so both hook contracts understand it:
 - VS Code Copilot and Claude Code read ``hookSpecificOutput`` (and
   ``systemMessage``).
 Emitting both keeps this one script working across all three surfaces.
+
+OpenAI Codex rejects any top-level key it does not know (its hook output
+schema uses deny_unknown_fields), so the Codex hooks.json passes ``--codex``
+and this script then emits only the Codex shape.
 """
 
 import json
 import re
 import sys
 
+CODEX = "--codex" in sys.argv[1:]
+
 
 def deny(reason):
-    json.dump({
+    hook_output = {
+        "hookEventName": "PreToolUse",
         "permissionDecision": "deny",
         "permissionDecisionReason": reason,
-        "hookSpecificOutput": {
-            "hookEventName": "PreToolUse",
+    }
+    if CODEX:
+        payload = {"hookSpecificOutput": hook_output}
+    else:
+        payload = {
             "permissionDecision": "deny",
             "permissionDecisionReason": reason,
-        },
-    }, sys.stdout)
+            "hookSpecificOutput": hook_output,
+        }
+    json.dump(payload, sys.stdout)
     sys.exit(0)
 
 
 def warn(message):
-    json.dump({
-        "systemMessage": message,
-        "additionalContext": message,
-    }, sys.stdout)
+    if CODEX:
+        payload = {
+            "systemMessage": message,
+            "hookSpecificOutput": {
+                "hookEventName": "PreToolUse",
+                "additionalContext": message,
+            },
+        }
+    else:
+        payload = {"systemMessage": message, "additionalContext": message}
+    json.dump(payload, sys.stdout)
     sys.exit(0)
 
 
@@ -43,8 +61,19 @@ def main():
     except (json.JSONDecodeError, EOFError):
         sys.exit(0)
 
-    # tool_input (VS Code / Claude) or toolArgs (Copilot CLI camelCase)
-    tool_input = data.get("tool_input") or data.get("toolArgs") or {}
+    if not isinstance(data, dict):
+        sys.exit(0)
+
+    # tool_input (Codex / VS Code / Claude) or toolArgs (Copilot CLI camelCase,
+    # which can arrive as a JSON string)
+    tool_input = (
+        data.get("tool_input") or data.get("toolInput") or data.get("toolArgs") or {}
+    )
+    if isinstance(tool_input, str):
+        try:
+            tool_input = json.loads(tool_input)
+        except json.JSONDecodeError:
+            sys.exit(0)
     if not isinstance(tool_input, dict):
         sys.exit(0)
     sql = tool_input.get("sql", "") or tool_input.get("statement", "")
