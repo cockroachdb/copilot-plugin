@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/cockroachdb/copilot-plugin/compare/v0.1.4...v0.1.5) (2026-10-09)
+
+
+### Bug Fixes
+
+* make the bundled MCP servers and SQL safety hook work out of the box ([#7](https://github.com/cockroachdb/copilot-plugin/issues/7)) ([66fcab9](https://github.com/cockroachdb/copilot-plugin/commit/66fcab9b9c545e3c842e3ba5418d69bf20f746b5))
+
 ## [0.1.4](https://github.com/cockroachdb/copilot-plugin/compare/v0.1.3...v0.1.4) (2026-07-01)
 
 
